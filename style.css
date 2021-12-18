@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+
+.ribbon {
+  width: 400px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.ribbon h2 {
+  margin: 0 0 20px;
+  background-color: #009688;
+  color: #fff;
+  padding: 15px;
+  width: calc(100% + 80px);
+  position: relative;
+  left: -40px;
+}
+
+.ribbon h2::before,
+.ribbon h2::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  border-width: 10px;
+  border-style: solid;
+}
+
+.ribbon h2::before {
+  left: 0;
+  border-color: #066f65 #066f65 transparent transparent;
+}
+
+.ribbon h2::after {
+  right: 0;
+  border-color: #066f65 transparent transparent #066f65;
+}
+.ribbon p {
+  line-height: 1.6;
+}
